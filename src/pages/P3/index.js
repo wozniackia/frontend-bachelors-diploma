@@ -1,6 +1,3 @@
-import { Link } from 'react-router-dom';
-
-
 function P3() {
   return <>
 
@@ -15,7 +12,7 @@ function P3() {
 
       <div className="flex justify-center items-end w-full gap-1 bg-white rounded-lg p-3">
         <div className="flex-grow">
-          <label for="select" className="block mb-2 text-sm font-medium text-gray-900 ">Imię, Nazwisko</label>
+          <label htmlFor="select" className="block mb-2 text-sm font-medium text-gray-900 ">Imię, Nazwisko</label>
           
         </div>
       </div>
@@ -70,7 +67,7 @@ function P3() {
 
       <div className="flex justify-center items-end w-full gap-1 bg-white rounded-lg p-3">
         <div className="flex-grow">
-          <label for="select" className="block mb-2 text-sm font-medium text-gray-900 ">Filtry</label>
+          <label htmlFor="select" className="block mb-2 text-sm font-medium text-gray-900 ">Filtry</label>
           <select id="select" className="bg-transparent cursor-pointer border text-sm rounded-lg w-full">
             <option selected className="bg-transparent">Choose an option</option>
             <option className="bg-transparent" value="1">Option 1</option>

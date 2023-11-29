@@ -1,6 +1,3 @@
-import { Link } from 'react-router-dom';
-
-
 function P1() {
   return (
     <div className="flex-grow p-6 overflow-auto">

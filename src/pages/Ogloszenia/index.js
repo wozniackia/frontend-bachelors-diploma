@@ -1,10 +1,9 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 
 function Ogloszenia() {
   const [tab, setTab] = useState(0)
-  return <>
+  return (
     <div className="flex-grow p-6 overflow-auto">
       <div className="flex my-6 w-8/12 justify-between items-center gap-20">
         <span className="text-4xl font-semibold ">Tablica Ogłoszeń</span>
@@ -16,9 +15,9 @@ function Ogloszenia() {
       <div className="flex justify-center items-end w-full gap-1 rounded-lg p-3">
         <div className="tabs flex space-x-2 bg-gray-300 px-3 py-1.5 rounded-lg">
           {/* Menu Pills  */}
-          <div onClick={()=>setTab(0)} className={`cursor-pointer px-2 py-1 rounded-lg font-semibold text-sm tab ${tab===0 && 'active'}`} >Wszystkie</div>
-          <div onClick={()=>setTab(1)} className={`cursor-pointer px-2 py-1 rounded-lg font-semibold text-sm tab ${tab===1 && 'active'}`} >Jadłospisy</div>
-          <div onClick={()=>setTab(2)} className={`cursor-pointer px-2 py-1 rounded-lg font-semibold text-sm tab ${tab===2 && 'active'}`} >Inne</div>
+          <div onClick={()=>setTab(0)} onKeyDown={() => {}} className={`cursor-pointer px-2 py-1 rounded-lg font-semibold text-sm tab ${tab===0 && 'active'}`} >Wszystkie</div>
+          <div onClick={()=>setTab(1)} onKeyDown={() => {}} className={`cursor-pointer px-2 py-1 rounded-lg font-semibold text-sm tab ${tab===1 && 'active'}`} >Jadłospisy</div>
+          <div onClick={()=>setTab(2)} onKeyDown={() => {}} className={`cursor-pointer px-2 py-1 rounded-lg font-semibold text-sm tab ${tab===2 && 'active'}`} >Inne</div>
         </div>
       </div>
 
@@ -147,7 +146,7 @@ function Ogloszenia() {
       </div>
 
     </div>
-  </>
+  );
 }
 
 export default Ogloszenia;

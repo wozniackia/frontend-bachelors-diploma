@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-// Header.js
 function Header() {
   return (
     <div className="flex justify-around items-center bg-white flex-shrink-0 basis-[60px] shadow border border-rounded border-solid">

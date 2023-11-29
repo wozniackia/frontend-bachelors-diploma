@@ -1,10 +1,7 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
-
-
 function P4() {
   const [tab, setTab] = useState(0)
-  return <>
+  return (
     <div className="flex-grow p-6 overflow-auto">
       <div className="flex my-6 w-8/12 justify-between items-center gap-20">
         <span className="text-4xl font-semibold ">Wiadomości</span>
@@ -16,9 +13,9 @@ function P4() {
       <div className="flex px-1 items-end w-full gap-1 rounded-lg p-3">
         <div className="tabs flex space-x-2 bg-gray-300 px-3 py-1.5 rounded-lg">
           {/* Menu Pills  */}
-          <div onClick={()=>setTab(0)} className={`cursor-pointer px-2 py-1 rounded-lg font-semibold text-sm tab ${tab===0 && 'active'}`} >Wiadomości prywatne</div>
-          <div onClick={()=>setTab(1)} className={`cursor-pointer px-2 py-1 rounded-lg font-semibold text-sm tab ${tab===1 && 'active'}`} >Wiadomości grupowe</div>
-          <div onClick={()=>setTab(2)} className={`cursor-pointer px-2 py-1 rounded-lg font-semibold text-sm tab ${tab===2 && 'active'}`} >Wiadomości ogólne</div>
+          <div onClick={()=>setTab(0)} onKeyDown={() => {}} className={`cursor-pointer px-2 py-1 rounded-lg font-semibold text-sm tab ${tab===0 && 'active'}`} >Wiadomości prywatne</div>
+          <div onClick={()=>setTab(1)} onKeyDown={() => {}} className={`cursor-pointer px-2 py-1 rounded-lg font-semibold text-sm tab ${tab===1 && 'active'}`} >Wiadomości grupowe</div>
+          <div onClick={()=>setTab(2)} onKeyDown={() => {}} className={`cursor-pointer px-2 py-1 rounded-lg font-semibold text-sm tab ${tab===2 && 'active'}`} >Wiadomości ogólne</div>
         </div>
       </div>
 
@@ -134,7 +131,7 @@ function P4() {
       </div>
 
     </div>
-  </>
+  )
 }
 
 export default P4;

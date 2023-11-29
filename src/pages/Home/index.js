@@ -6,7 +6,7 @@ function Home() {
     <Link className="m-2 p-2 rounded border border-green-500 bg-white text-green-500 hover:bg-green-300 hover:text-white" to="/Login">Login</Link>
     <Link className="m-2 p-2 rounded border border-green-500 bg-white text-green-500 hover:bg-green-300 hover:text-white" to="/p0">Wybór placówki</Link>
     <Link className="m-2 p-2 rounded border border-green-500 bg-white text-green-500 hover:bg-green-300 hover:text-white" to="/p1">Obecności</Link>
-    <Link className="m-2 p-2 rounded border border-green-500 bg-white text-green-500 hover:bg-green-300 hover:text-white" to="/p2">Main Dashboard</Link>
+    <Link className="m-2 p-2 rounded border border-green-500 bg-white text-green-500 hover:bg-green-300 hover:text-white" to="/summary">Main Dashboard</Link>
     <Link className="m-2 p-2 rounded border border-green-500 bg-white text-green-500 hover:bg-green-300 hover:text-white" to="/p3">Pracownicy</Link>
     <Link className="m-2 p-2 rounded border border-green-500 bg-white text-green-500 hover:bg-green-300 hover:text-white" to="/p4">Wiadomości</Link>
     <Link className="m-2 p-2 rounded border border-green-500 bg-white text-green-500 hover:bg-green-300 hover:text-white" to="/Ogloszenia">Ogloszenia</Link>

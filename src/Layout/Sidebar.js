@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SidebarLink from "../Components/Sidebar/SidebarLink";
 
 function Sidebar() {
   return (
@@ -12,34 +13,11 @@ function Sidebar() {
       </Link>
       {/* side menu */}
       <div className="flex flex-col gap-3 flex-grow mx-auto items-start justify-start pt-20">
-        <Link to="/p2">
-          <div className="flex gap-2 cursor-pointer ">
-            <img src="/images/calendar.png" alt="" />
-            <span className="text-gray-300 hover:text-white">Dzisiaj</span>
-          </div>
-        </Link>
-        <Link to="/p4">
-          <div className="flex gap-2 cursor-pointer ">
-            <img src="/images/message.png" alt="" />
-            <span className="text-gray-300 hover:text-white">Komunikacja</span>
-          </div>
-        </Link>
-        <Link to="/p3">
-        <div className="flex gap-2 cursor-pointer ">
-          <img src="/images/person.png" alt="" />
-          <span className="text-gray-300 hover:text-white">Kadra</span>
-        </div>
-        </Link>
-        <div className="flex gap-2 cursor-pointer ">
-          <img src="/images/wallet.png" alt="" />
-          <span className="text-gray-300 hover:text-white">Finanse</span>
-        </div>
-        <Link to="/Dzieci">
-        <div className="flex gap-2 cursor-pointer ">
-          <img src="/images/home.png" alt="" />
-          <span className="text-gray-300 hover:text-white">Placówka</span>
-        </div>
-        </Link>
+        <SidebarLink to="/summary" imgSrc="/images/calendar.png" text="Dzisiaj" />
+        <SidebarLink to="/p4" imgSrc="/images/message.png" text="Komunikacja" />
+        <SidebarLink to="/p3" imgSrc="/images/person.png" text="Kadra" />
+        <SidebarLink to="#" imgSrc="/images/wallet.png" text="Finanse" />
+        <SidebarLink to="/dzieci" imgSrc="/images/home.png" text="Placówka" />
       </div>
     </>
   );
