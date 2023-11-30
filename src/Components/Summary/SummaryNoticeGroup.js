@@ -1,6 +1,6 @@
 import SummaryNotice from "./SummaryNotice";
 
-function SummaryNoticeGroup(props) {
+function SummaryNoticeGroup() {
   return (
     <div className="flex flex-col gap-3 p-7 justify-center items-start rounded-2xl shadow bg-white border cursor-pointer">
       <div className="text-xl font-medium text-gray-900 mb-3">Zgłoszenia</div>

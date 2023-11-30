@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 
-function SidebarLink(props) {
+function SidebarLink({ to, imgSrc, text }) {
   return (
-    <Link to={props.to}>
+    <Link to={to}>
       <div className="flex gap-2 cursor-pointer ">
-        <img src={props.imgSrc} alt="" />
-        <span className="text-gray-300 hover:text-white">{props.text}</span>
+        <img src={imgSrc} alt="" />
+        <span className="text-gray-300 hover:text-white">{text}</span>
       </div>
     </Link>
   );

@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 
-function MiniSidebarGroupSelect(props) {
+function MiniSidebarGroupSelect({ name, value }) {
   return (
-    <option className="bg-transparent" value={props.value}>
-      {props.name}
+    <option className="bg-transparent" value={value}>
+      {name}
     </option>
   );
 }

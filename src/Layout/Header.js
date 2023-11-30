@@ -1,10 +1,7 @@
 function Header() {
   return (
     <div className="flex justify-around items-center bg-white flex-shrink-0 basis-[60px] shadow border border-rounded border-solid">
-      <div className="w-9/12 flex justify-between items-center ">
-        
-      
-        
+      <div className="w-9/12 flex justify-between items-center ">  
       </div>
       <div>
         <p className="base-color text-lg">Antoni Woźniacki</p>

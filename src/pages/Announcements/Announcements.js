@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 
-function Ogloszenia() {
+function Announcements() {
   const [tab, setTab] = useState(0)
   return (
     <div className="flex-grow p-6 overflow-auto">
@@ -149,4 +149,4 @@ function Ogloszenia() {
   );
 }
 
-export default Ogloszenia;
+export default Announcements;

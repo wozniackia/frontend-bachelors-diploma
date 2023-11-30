@@ -1,6 +1,6 @@
 import MiniSidebarGroupSelect from "./MiniSidebarGroupSelect";
 
-function MiniSidebarGroup(props) {
+function MiniSidebarGroup() {
   return (
     <div className="">
       <label
