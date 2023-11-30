@@ -14,7 +14,7 @@ function Sidebar() {
         <SidebarLink to="/summary" imgSrc="/images/calendar.png" text="Dzisiaj" />
         <SidebarLink to="/messages" imgSrc="/images/message.png" text="Komunikacja" />
         <SidebarLink to="/personnel" imgSrc="/images/person.png" text="Kadra" />
-        {/* <SidebarLink to="#" imgSrc="/images/wallet.png" text="Finanse" /> */}
+        <SidebarLink to="/gallery" imgSrc="/images/gallery.png" text="Galeria" />
         <SidebarLink to="/kids" imgSrc="/images/home.png" text="Placówka" />
       </div>
     </>
