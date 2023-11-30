@@ -1,7 +1,7 @@
-import EditButton from "../../Components/General/EditButton";
-import SummaryCircle from "../../Components/Summary/SummaryCircle";
-import SummaryMealGroup from "../../Components/Summary/SummaryMealGroup";
-import SummaryNoticeGroup from "../../Components/Summary/SummaryNoticeGroup";
+import EditButton from "../../../Components/General/EditButton";
+import SummaryCircle from "../../../Components/Summary/SummaryCircle";
+import SummaryMealGroup from "../../../Components/Summary/SummaryMealGroup";
+import SummaryNoticeGroup from "../../../Components/Summary/SummaryNoticeGroup";
 
 function Summary() {
   return (

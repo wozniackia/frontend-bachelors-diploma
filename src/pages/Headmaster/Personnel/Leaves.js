@@ -1,4 +1,4 @@
-import LeavesCard from "../../Components/Personnel/LeavesCard";
+import LeavesCard from "../../../Components/Personnel/LeavesCard";
 
 function Leaves() {
   return (

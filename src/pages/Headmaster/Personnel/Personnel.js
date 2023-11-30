@@ -1,5 +1,5 @@
-import Employees from "../../Components/Personnel/Employees";
-import Substitutions from "../../Components/Personnel/Substitutions";
+import Employees from "../../../Components/Personnel/Employees";
+import Substitutions from "../../../Components/Personnel/Substitutions";
 
 function Personnel() {
   return (

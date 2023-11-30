@@ -1,4 +1,4 @@
-import KidCard from "../../Components/Kids/KidCard";
+import KidCard from "../../../Components/Kids/KidCard";
 
 function Kids() {
   return (

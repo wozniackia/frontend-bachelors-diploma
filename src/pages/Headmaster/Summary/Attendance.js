@@ -1,5 +1,5 @@
-import AttendanceKidCard from "../../Components/Summary/AttendanceKidCard";
-import AttendanceSummaryCard from "../../Components/Summary/AttendanceSummaryCard";
+import AttendanceKidCard from "../../../Components/Summary/AttendanceKidCard";
+import AttendanceSummaryCard from "../../../Components/Summary/AttendanceSummaryCard";
 
 function Attendance() {
   return (

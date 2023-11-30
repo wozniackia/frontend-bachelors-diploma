@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 function MiniSidebarFacilityName({ facilityName }) {
   return (
@@ -7,7 +8,9 @@ function MiniSidebarFacilityName({ facilityName }) {
         Aktualna placówka
       </label>
       <div className="flex cursor-pointer px-3 py-2 bg-gray-300 rounded-md">
-        <span className="text-gray-900 hover:text-black">{facilityName}</span>
+        <Link to="/facility">
+          <span className="text-gray-900 hover:text-black">{facilityName}</span>
+        </Link>
       </div>
     </div>
   );

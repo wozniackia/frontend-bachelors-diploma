@@ -1,5 +1,5 @@
 import { useState } from 'react';
-function P4() {
+function Messages() {
   const [tab, setTab] = useState(0)
   return (
     <div className="flex-grow p-6 overflow-auto">
@@ -134,4 +134,4 @@ function P4() {
   )
 }
 
-export default P4;
+export default Messages;
