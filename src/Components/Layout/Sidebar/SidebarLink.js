@@ -6,7 +6,7 @@ function SidebarLink({ to, imgSrc, text }) {
     <Link to={to}>
       <div className="flex gap-2 cursor-pointer ">
         <img src={imgSrc} alt="" />
-        <span className="text-gray-300 hover:text-white">{text}</span>
+        <span className="text-white hover:text-white">{text}</span>
       </div>
     </Link>
   );

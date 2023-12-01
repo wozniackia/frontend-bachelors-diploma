@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import MiniSidebarFacilityName from "../../Components/Layout/MiniSidebar/MiniSidebarFacilityName";
-import MiniSidebarGroup from "../../Components/Layout/MiniSidebar/MiniSidebarGroup";
-import MiniSidebarLink from "../../Components/Layout/MiniSidebar/MiniSidebarLink";
+import MiniSidebarFacilityName from "../../../Components/Layout/MiniSidebar/MiniSidebarFacilityName";
+import MiniSidebarGroup from "../../../Components/Layout/MiniSidebar/MiniSidebarGroup";
+import MiniSidebarLink from "../../../Components/Layout/MiniSidebar/MiniSidebarLink";
 
 function MiniSidebarFacility({ index }) {
   return (

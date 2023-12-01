@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import MiniSidebarFacility from "../../Components/Layout/MiniSidebar/MiniSidebarFacilityName";
-import MiniSidebarLink from "../../Components/Layout/MiniSidebar/MiniSidebarLink";
+import MiniSidebarFacility from "../../../Components/Layout/MiniSidebar/MiniSidebarFacilityName";
+import MiniSidebarLink from "../../../Components/Layout/MiniSidebar/MiniSidebarLink";
 
 function MiniSidebarPersonnel({ index }) {
   return (

@@ -22,19 +22,19 @@ function Facility() {
           placeholder="Zacznij wpisywać tekst, aby wyszukać na liście"
         />
       </div>
-      
+
       <div className="my-6 flex justify-left items-center gap-3 w-11/12">
-      <Link to="/summary">  
-      <div className="flex px-5 justify-start gap-5 items-center w-12/12 h-20 shadow bg-white border cursor-pointer hover:shadow-lg">
-          <div className="rounded-full p-3 bg-gray-200 font-semibold">AW</div>
-          <p className="base-color text-xl font-medium">Przedszkole Pieski</p>
-        </div>
+        <Link to="/headmaster/summary">
+          <div className="flex px-5 justify-start gap-5 items-center w-12/12 h-20 shadow bg-white border cursor-pointer hover:shadow-lg">
+            <div className="rounded-full p-3 bg-gray-200 font-semibold">AW</div>
+            <p className="base-color text-xl font-medium">Przedszkole Pieski</p>
+          </div>
         </Link>
-        <Link to="/summary"> 
-        <div className="flex px-5 justify-start gap-5 items-center w-12/12 h-20 shadow bg-white border cursor-pointer hover:shadow-lg">
-          <div className="rounded-full p-3 bg-gray-200 font-semibold">AW</div>
-          <p className="base-color text-xl font-medium">Przedszkole Kotki</p>
-        </div>
+        <Link to="/headmaster/summary">
+          <div className="flex px-5 justify-start gap-5 items-center w-12/12 h-20 shadow bg-white border cursor-pointer hover:shadow-lg">
+            <div className="rounded-full p-3 bg-gray-200 font-semibold">AW</div>
+            <p className="base-color text-xl font-medium">Przedszkole Kotki</p>
+          </div>
         </Link>
         <div className="flex px-5 justify-start gap-5 items-center w-4/12 h-20 shadow secondary-bg border cursor-pointer hover:shadow-lg">
           <p className="base-color text-xl font-medium">Dodaj placówkę</p>
@@ -43,7 +43,7 @@ function Facility() {
             className="base-bg rounded-lg  text-center p-1 h-10 w-10 cursor-pointer"
             alt=""
           />
-        </div> 
+        </div>
       </div>
     </div>
   );
