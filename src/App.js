@@ -15,7 +15,7 @@ import Personnel from './pages/Headmaster/Personnel/Personnel';
 import Leaves from './pages/Headmaster/Personnel/Leaves';
 import Messages from './pages/Headmaster/Communication/Messages';
 import Posts from './pages/Headmaster/Communication/Posts';
-import Kids from './pages/Headmaster/Kids/Kids';
+import HeadmasterKids from './pages/Headmaster/Kids/Kids';
 import Parents from './pages/Headmaster/Kids/Parents';
 import Groups from './pages/Headmaster/Kids/Groups';
 import Config from './pages/Headmaster/Kids/Config';
@@ -25,6 +25,9 @@ import Gallery from './pages/Headmaster/Gallery/Gallery';
 import ParentLayout from './Layout/Parent/Layout';
 import ParentMiniSidebarSummary from './Layout/Parent/MiniSidebars/MiniSidebarSummary';
 import ParentSummary from './pages/Parent/Summary/Summary';
+import ParentMessages from './pages/Parent/Communication/Messages'
+import ParentKids from './pages/Parent/Kids/Kids'
+import ParentGallery from './pages/Parent/Gallery/Gallery'
 
 function App() {
   return (
@@ -34,6 +37,7 @@ function App() {
 
         <Route path="/login" element={<Login />} />
         
+        <Route path="/headmaster" element={<HeadmasterLayout ><Facility /></HeadmasterLayout>} />
         <Route path="/headmaster/facility" element={<HeadmasterLayout ><Facility /></HeadmasterLayout>} />
         <Route path="/headmaster/summary" element={<HeadmasterLayout minisidebarEnabled={true} minisidebar={<HeadmasterMiniSidebarSummary index={0} />} ><HeadmasterSummary /></HeadmasterLayout>} />
         <Route path="/headmaster/attendance" element={<HeadmasterLayout minisidebarEnabled={true} minisidebar={<HeadmasterMiniSidebarSummary index={1} />} ><Attendance /></HeadmasterLayout>} />
@@ -41,14 +45,18 @@ function App() {
         <Route path="/headmaster/leaves" element={<HeadmasterLayout minisidebarEnabled={true} minisidebar={<MiniSidebarPersonnel index={1} />} ><Leaves /></HeadmasterLayout>} />
         <Route path="/headmaster/messages" element={<HeadmasterLayout ><Messages /></HeadmasterLayout>} />
         <Route path="/headmaster/posts" element={<HeadmasterLayout minisidebarEnabled={true}><Posts /></HeadmasterLayout>} />
-        <Route path="/headmaster/kids" element={<HeadmasterLayout minisidebarEnabled={true} minisidebar={<MiniSidebarFacility index={0} />} ><Kids /></HeadmasterLayout>} />
+        <Route path="/headmaster/kids" element={<HeadmasterLayout minisidebarEnabled={true} minisidebar={<MiniSidebarFacility index={0} />} ><HeadmasterKids /></HeadmasterLayout>} />
         <Route path="/headmaster/parents" element={<HeadmasterLayout minisidebarEnabled={true} minisidebar={<MiniSidebarFacility index={1} />} ><Parents /></HeadmasterLayout>} />
         <Route path="/headmaster/groups" element={<HeadmasterLayout minisidebarEnabled={true} minisidebar={<MiniSidebarFacility index={2} />} ><Groups /></HeadmasterLayout>} />
         <Route path="/headmaster/config" element={<HeadmasterLayout minisidebarEnabled={true} minisidebar={<MiniSidebarFacility index={3} />} ><Config /></HeadmasterLayout>} />
         <Route path="/headmaster/diets" element={<HeadmasterLayout minisidebarEnabled={true} minisidebar={<MiniSidebarFacility index={4} />} ><Diets /></HeadmasterLayout>} />
         <Route path="/headmaster/gallery" element={<HeadmasterLayout ><Gallery /></HeadmasterLayout>} />
 
+        <Route path="/parent" element={<ParentLayout ><ParentKids /></ParentLayout>} />
+        <Route path="/parent/kids" element={<ParentLayout ><ParentKids /></ParentLayout>} />
         <Route path="/parent/summary" element={<ParentLayout minisidebarEnabled={true} minisidebar={<ParentMiniSidebarSummary index={0} />} ><ParentSummary /></ParentLayout>} />
+        <Route path="/parent/messages" element={<ParentLayout ><ParentMessages /></ParentLayout>} />
+        <Route path="/parent/gallery" element={<ParentLayout ><ParentGallery /></ParentLayout>} />
       </Routes>
     </BrowserRouter>
   );

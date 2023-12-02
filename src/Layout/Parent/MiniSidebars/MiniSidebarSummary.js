@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
-import MiniSidebarGroup from "../../../Components/Layout/MiniSidebar/MiniSidebarGroup";
 import MiniSidebarLink from "../../../Components/Layout/MiniSidebar/MiniSidebarLink";
+import MiniSidebarKidName from "../../../Components/Layout/MiniSidebar/MiniSidebarKidName";
 
 function MiniSidebar({ index }) {
   return (
     <>
-      <MiniSidebarGroup />
+      <MiniSidebarKidName kidName="Maciuś" />
 
       <MiniSidebarLink text="Dzisiaj" selected={index === 0} to="/parent/summary" />
     </>

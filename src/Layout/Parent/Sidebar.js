@@ -13,7 +13,6 @@ function Sidebar() {
       <div className="flex flex-col gap-3 flex-grow mx-auto items-start justify-start pt-20">
         <SidebarLink to="/parent/summary" imgSrc="/images/calendar.png" text="Dzisiaj" />
         <SidebarLink to="/parent/messages" imgSrc="/images/message.png" text="Komunikacja" />
-        <SidebarLink to="/parent/diets" imgSrc="/images/meal.png" text="Jadłospis" />
         <SidebarLink to="/parent/gallery" imgSrc="/images/gallery.png" text="Galeria" />
       </div>
     </>
