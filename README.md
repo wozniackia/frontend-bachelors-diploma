@@ -9,29 +9,30 @@
 - widoki rodzica
 
 ## Endpointy:
-
-- [ ] /register
-- [ ] /login
-- [ ] /facilities
+(pozniej dodam pelne adresy do tego)
+- [x] /register
+- [x] /login
+- [ ] /facilities (! facility ma tylko id i name - dodac id dyrektora do facility + rola dyrektor dla usera?)
 	- wszystkie placowki danego dyrektora
-- [ ] /groups
+- [x] /groups
 	- wszystkie grupy danej placowki
-- [ ] /facilitySummary
+- [x] /facilitySummary
 	- ile obecnych dzieci dzisiaj
 	- ile nieobecnych dzisiaj
 	- ile nieobecnych jutro
 	- ilosc wszystkich dzieci w placowce)
-- [ ] /diets
+- [ ] /diets (my w koncu robimy te diety?)
 	- per placowka
-- [ ] /absence
+- [x] /absence == /attendance
 	- zgloszenia nieobecnosci w tym tygodniu
 	- imie nazwisko dziecka, grupa, data
-- [ ] /attendance
+- [x] /attendance
 	- per grupa lub placowka
 	- kazde dziecko (imie i nazwisko) + stan obecnosci dzisiaj	
-- [ ] /kids
+- [x] /kids
 	- per grupa lub placowka
-- [ ] /posts
+   	- per imie i nazwisko (request param) 
+- [x] /posts
 - [ ] /employees
 	- wszyscy pracownicy
 	- imie
@@ -41,14 +42,14 @@
 - [ ] /leaves
 	- wnioski urlopowe
 	- data >=dzisiaj
-- [ ] /parents
+- [x] /parents
 	- imie nazwisko dziecka
 	- imie nazwisko rodzica 1
 	- imie nazwisko rodzica 2 (optional)
-- [ ] /add, edit, delete Facility
-- [ ] /add, edit, deleteGroup
+- [x] /add, edit, delete Facility
+- [x] /add, edit, deleteGroup
 - [ ] /add, edit, deleteDiet
-- [ ] /add, edit, deleteKid
-- [ ] /add, edit, deleteParent
-- [ ] /add, edit, deleteEmployee
+- [x] /add, edit, deleteKid
+- [x] /add, edit, deleteParent
+- [x] /add, edit, deleteEmployee
 - [ ] jakis endpoint do generowania hasła dla rodzica (wysylanie mailem?)
