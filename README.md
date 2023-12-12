@@ -21,7 +21,7 @@
 	- ile nieobecnych dzisiaj
 	- ile nieobecnych jutro
 	- ilosc wszystkich dzieci w placowce)
-- [ ] /diets (my w koncu robimy te diety?)
+- [x] /diets (my w koncu robimy te diety?)
 	- per placowka
 - [x] /absence == /attendance
 	- zgloszenia nieobecnosci w tym tygodniu
@@ -33,13 +33,13 @@
 	- per grupa lub placowka
    	- per imie i nazwisko (request param) 
 - [x] /posts
-- [ ] /employees
+- [x] /employees
 	- wszyscy pracownicy
 	- imie
 	- nazwisko
 	- placowka
 	- grupa
-- [ ] /leaves
+- [ ] /leaves (co to jest? xd)
 	- wnioski urlopowe
 	- data >=dzisiaj
 - [x] /parents
@@ -48,7 +48,7 @@
 	- imie nazwisko rodzica 2 (optional)
 - [x] /add, edit, delete Facility
 - [x] /add, edit, deleteGroup
-- [ ] /add, edit, deleteDiet
+- [x] /add, edit, deleteDiet
 - [x] /add, edit, deleteKid
 - [x] /add, edit, deleteParent
 - [x] /add, edit, deleteEmployee
