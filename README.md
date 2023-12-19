@@ -9,46 +9,45 @@
 - widoki rodzica
 
 ## Endpointy:
-(pozniej dodam pelne adresy do tego)
-- [x] /register
-- [x] /login
-- [ ] /facilities (! facility ma tylko id i name - dodac id dyrektora do facility + rola dyrektor dla usera?)
+- [x] /register - `/api/user/register`
+- [x] /login - `/api/user/login`
+- [x] /facilities - `/api/facility/principal/{principalId}`
 	- wszystkie placowki danego dyrektora
-- [x] /groups
+- [x] /groups - `/api/facility/{facilityId}/groups`
 	- wszystkie grupy danej placowki
-- [x] /facilitySummary
+- [x] /facilitySummary - `/api/facility/{facilityId}/summary`
 	- ile obecnych dzieci dzisiaj
 	- ile nieobecnych dzisiaj
 	- ile nieobecnych jutro
 	- ilosc wszystkich dzieci w placowce)
-- [ ] /diets (my w koncu robimy te diety?)
-	- per placowka
-- [x] /absence == /attendance
+- [x] /diets - `/api/catering/group/{groupId}`
+	- per placowka (per grupa)
+- [x] /absence == /attendance - `/api/kid/{kidId}/attendance`
 	- zgloszenia nieobecnosci w tym tygodniu
 	- imie nazwisko dziecka, grupa, data
 - [x] /attendance
 	- per grupa lub placowka
 	- kazde dziecko (imie i nazwisko) + stan obecnosci dzisiaj	
-- [x] /kids
+- [x] /kids - `/api/kid/group/{groupId}`
 	- per grupa lub placowka
    	- per imie i nazwisko (request param) 
-- [x] /posts
-- [ ] /employees
+- [x] /posts - `/api/post`
+- [x] /employees - `/api/employees`
 	- wszyscy pracownicy
 	- imie
 	- nazwisko
 	- placowka
 	- grupa
-- [ ] /leaves
+- [x] /leaves - `/api/leaves`
 	- wnioski urlopowe
 	- data >=dzisiaj
-- [x] /parents
+- [x] /parents - `/api/kid/{kidId}/parents`
 	- imie nazwisko dziecka
 	- imie nazwisko rodzica 1
 	- imie nazwisko rodzica 2 (optional)
 - [x] /add, edit, delete Facility
 - [x] /add, edit, deleteGroup
-- [ ] /add, edit, deleteDiet
+- [x] /add, edit, deleteDiet
 - [x] /add, edit, deleteKid
 - [x] /add, edit, deleteParent
 - [x] /add, edit, deleteEmployee
