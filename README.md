@@ -11,7 +11,7 @@
 ## Endpointy:
 - [x] /register - `/api/user/register`
 - [x] /login - `/api/user/login`
-- [x] /facilities - /api/facility/principal/{principalId}
+- [x] /facilities - `/api/facility/principal/{principalId}`
 	- wszystkie placowki danego dyrektora
 - [x] /groups - `/api/facility/{facilityId}/groups`
 	- wszystkie grupy danej placowki
